@@ -62,3 +62,18 @@ Migrations são uma maneira de versionar as tabelas de sua base de dados. Para e
 - Execute `./vendor/bin/sail art migrate` para montar sua adicionar as tabelas ao seu banco
 
 - Execute `./vendor/bin/sail art db:seed` para popular o seu banco com dados fictícios
+
+# Experiência pessoal com Windows
+Alguns problemas para começar a utilizar o sail.
+
+- Resolvido a partir da alteração dos arquivos para unix format (utilizados comandos abaixo).
+```
+sudo apt-get install -y dos2unix # Installs dos2unix Linux
+
+sudo find . -type f -exec dos2unix {} \; # recursively removes windows related stuff
+
+
+And make sure your git config is set as follows:
+
+git config --global core.autocrlf input
+```
