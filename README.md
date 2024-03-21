@@ -77,3 +77,10 @@ And make sure your git config is set as follows:
 
 git config --global core.autocrlf input
 ```
+
+- Após isso roda comandos para instalar as dependências do Javascript. 
+```
+- sail npm install
+- sail npm audit fix //para atualizar versões das dependências caso desatualizadas
+- sail npm run build
+```
